@@ -26,8 +26,6 @@ const nav = [
     ],
   },
   { label: "Notre approche", href: "/notre-approche" },
-  { label: "Actualites", href: "/actualites" },
-  { label: "Recrutement", href: "/recrutement" },
   { label: "Contact", href: "/contact" },
 ];
 

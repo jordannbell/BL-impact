@@ -19,7 +19,6 @@ export default function Footer() {
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/expertises">Expertises</Link></li>
             <li><Link href="/notre-approche">Notre approche</Link></li>
-            <li><Link href="/recrutement">Recrutement</Link></li>
           </ul>
         </div>
         <div>
