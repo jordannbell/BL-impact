@@ -17,19 +17,19 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Pour les dirigeants de PME et d&apos;ETI, BL IMPACT propose un accompagnement dimensionne aux moyens de l&apos;entreprise, centre sur la simplification des flux documentaires et la fiabilisation de la communication client.</p>
+            <p>Pour les dirigeants de PME et d&apos;ETI, BL IMPACT propose un accompagnement dimensionné aux moyens de l&apos;entreprise, centré sur la simplification des flux documentaires et la fiabilisation de la communication client.</p>
             <ul className="check-list">
-              <li>Diagnostic des processus documentaires existants et des couts associes</li>
+              <li>Diagnostic des processus documentaires existants et des coûts associés</li>
               <li>Structuration des outils et des flux pour accompagner la croissance</li>
-              <li>Appui a la decision dans un contexte de ressources limitees</li>
+              <li>Appui à la décision dans un contexte de ressources limitées</li>
               <li>Mise en place d&apos;indicateurs de suivi simples et actionnables</li>
             </ul>
           </div>
           <div className="callout">
             <strong>Notre approche</strong>
             <br /><br />
-            Une meme methodologie rigoureuse, adaptee aux contraintes de gouvernance,
-            de ressources et de temps propres a chaque type d&apos;organisation.
+            Une même méthodologie rigoureuse, adaptée aux contraintes de gouvernance,
+            de ressources et de temps propres à chaque type d&apos;organisation.
           </div>
         </div>
       </section>

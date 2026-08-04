@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 
 const nav = [
   { label: "Accueil", href: "/" },
-  { label: "A propos", href: "/a-propos" },
+  { label: "À propos", href: "/a-propos" },
   {
     label: "Services",
     href: "/services",
     sub: [
-      { label: "Diagnostic strategique", href: "/services/diagnostic-strategique" },
-      { label: "Elaboration de la strategie", href: "/services/elaboration-strategie" },
-      { label: "Accompagnement a la mise en oeuvre", href: "/services/mise-en-oeuvre" },
+      { label: "Diagnostic stratégique", href: "/services/diagnostic-strategique" },
+      { label: "Élaboration de la stratégie", href: "/services/elaboration-strategie" },
+      { label: "Accompagnement à la mise en œuvre", href: "/services/mise-en-oeuvre" },
       { label: "Pilotage de la performance", href: "/services/pilotage-performance" },
     ],
   },

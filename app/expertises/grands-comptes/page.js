@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Grands comptes",
-  description: "BL IMPACT accompagne les directions generales et directions metier des grands comptes sur leurs flux documentaires.",
+  description: "BL IMPACT accompagne les directions générales et directions métier des grands comptes sur leurs flux documentaires.",
 };
 
 export default function Page() {
@@ -17,19 +17,19 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Au sein de grandes organisations, BL IMPACT intervient en appui des directions generales et des directions metier sur des projets de transformation documentaire et de communication client transverses, en toute independance vis-a-vis des equipes internes et des prestataires en place.</p>
+            <p>Au sein de grandes organisations, BL IMPACT intervient en appui des directions générales et des directions métier sur des projets de transformation documentaire et de communication client transverses, en toute indépendance vis-à-vis des équipes internes et des prestataires en place.</p>
             <ul className="check-list">
-              <li>Diagnostic et refonte des flux documentaires a l&apos;echelle d&apos;une direction ou d&apos;un groupe</li>
+              <li>Diagnostic et refonte des flux documentaires à l&apos;échelle d&apos;une direction ou d&apos;un groupe</li>
               <li>Accompagnement de projets de transformation multicanale transverses</li>
-              <li>Appui a la prise de decision en comite de direction</li>
-              <li>Pilotage de la performance et de la tracabilite des communications a grande echelle</li>
+              <li>Appui à la prise de décision en comité de direction</li>
+              <li>Pilotage de la performance et de la traçabilité des communications à grande échelle</li>
             </ul>
           </div>
           <div className="callout">
             <strong>Notre approche</strong>
             <br /><br />
-            Une meme methodologie rigoureuse, adaptee aux contraintes de gouvernance,
-            de ressources et de temps propres a chaque type d&apos;organisation.
+            Une même méthodologie rigoureuse, adaptée aux contraintes de gouvernance,
+            de ressources et de temps propres à chaque type d&apos;organisation.
           </div>
         </div>
       </section>

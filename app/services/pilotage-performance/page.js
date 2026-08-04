@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Pilotage de la performance",
-  description: "BL IMPACT met en place les outils de pilotage, de suivi des couts et de tracabilite des communications multicanales.",
+  description: "BL IMPACT met en place les outils de pilotage, de suivi des coûts et de traçabilité des communications multicanales.",
 };
 
 export default function Page() {
@@ -17,26 +17,26 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Pour perenniser les resultats, BL IMPACT aide a definir les indicateurs et les outils de suivi permettant de mesurer la performance et la tracabilite de vos communications dans la duree.</p>
+            <p>Pour pérenniser les résultats, BL IMPACT aide à définir les indicateurs et les outils de suivi permettant de mesurer la performance et la traçabilité de vos communications dans la durée.</p>
             <ul className="check-list">
-              <li>Definition d&apos;indicateurs de suivi des couts, des delais et des volumes de flux</li>
-              <li>Mise en place de tableaux de bord et d&apos;outils de tracabilite des communications multicanales</li>
-              <li>Revues de performance periodiques avec la direction</li>
-              <li>Recommandations correctives en cas d&apos;ecart aux objectifs</li>
+              <li>Définition d&apos;indicateurs de suivi des coûts, des délais et des volumes de flux</li>
+              <li>Mise en place de tableaux de bord et d&apos;outils de traçabilité des communications multicanales</li>
+              <li>Revues de performance périodiques avec la direction</li>
+              <li>Recommandations correctives en cas d&apos;écart aux objectifs</li>
             </ul>
-            <p>Le pilotage de la performance permet de transformer une refonte ponctuelle en amelioration continue des flux.</p>
+            <p>Le pilotage de la performance permet de transformer une refonte ponctuelle en amélioration continue des flux.</p>
           </div>
           <div className="callout">
-            <strong>Valeur ajoutee BL IMPACT</strong>
+            <strong>Valeur ajoutée BL IMPACT</strong>
             <br /><br />
-            Des indicateurs simples, penses pour etre suivis dans la duree par
-            vos equipes, et non uniquement lors d&apos;un audit ponctuel.
+            Des indicateurs simples, pensés pour être suivis dans la durée par
+            vos équipes, et non uniquement lors d&apos;un audit ponctuel.
           </div>
         </div>
       </section>
       <section className="cta-band">
         <div className="container">
-          <h2 className="section-title">Echanger sur ce service</h2>
+          <h2 className="section-title">Échanger sur ce service</h2>
           <Link className="btn" href="/contact">Prendre contact</Link>
         </div>
       </section>

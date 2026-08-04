@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Expertises",
-  description: "Les types d'organisations accompagnes par BL IMPACT sur leurs flux documentaires : grands comptes, PME et ETI, secteur public et associations.",
+  description: "Les types d'organisations accompagnés par BL IMPACT sur leurs flux documentaires : grands comptes, PME et ETI, secteur public et associations.",
 };
 
 export default function Expertises() {
@@ -12,20 +12,20 @@ export default function Expertises() {
         <div className="container">
           <div className="breadcrumb"><Link href="/">Accueil</Link> / Expertises</div>
           <h1>Nos expertises</h1>
-          <p>Un accompagnement adapte a la taille et a la nature de chaque organisation.</p>
+          <p>Un accompagnement adapté à la taille et à la nature de chaque organisation.</p>
         </div>
       </section>
       <section>
         <div className="container">
           <p className="section-sub">
-            BL IMPACT adapte sa methodologie de conseil en transformation
+            BL IMPACT adapte sa méthodologie de conseil en transformation
             documentaire au contexte propre de chaque type d&apos;organisation,
-            avec une meme exigence de resultat.
+            avec une même exigence de résultat.
           </p>
           <div className="grid">
             <div className="card">
               <h3><Link href="/expertises/grands-comptes">Grands comptes</Link></h3>
-              <p>Accompagnement des directions generales et directions metier de grandes organisations dans la refonte de leurs flux documentaires et de leur communication client.</p>
+              <p>Accompagnement des directions générales et directions métier de grandes organisations dans la refonte de leurs flux documentaires et de leur communication client.</p>
             </div>
             <div className="card">
               <h3><Link href="/expertises/pme-eti">PME et ETI</Link></h3>
