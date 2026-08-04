@@ -25,7 +25,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <ul>
             <li>Paris, France</li>
-            <li><a href="mailto:mbom.didier@gmail.com">mbom.didier@gmail.com</a></li>
+            <li><a href="mailto:blimpact2025@gmail.com">blimpact2025@gmail.com</a></li>
             <li>+33 6 51 45 35 38</li>
             <li><Link href="/contact">Nous contacter</Link></li>
           </ul>

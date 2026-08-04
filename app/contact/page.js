@@ -25,19 +25,15 @@ export default function Contact() {
             </div>
             <ul className="check-list">
               <li>Paris, France</li>
-              <li>Email : <a href="mailto:mbom.didier@gmail.com" style={{ color: "var(--accent)" }}>mbom.didier@gmail.com</a></li>
+              <li>Email : <a href="mailto:blimpact2025@gmail.com" style={{ color: "var(--accent)" }}>blimpact2025@gmail.com</a></li>
               <li>Telephone : +33 6 51 45 35 38</li>
+              <li>SIRET : 988 289 591 00014</li>
             </ul>
-            <p style={{ color: "var(--slate)", fontSize: 13.5, marginTop: 24 }}>
-              BL IMPACT est un cabinet recemment cree. Les informations legales
-              completes (SIRET, forme juridique) seront publiees ici une fois
-              l&apos;immatriculation finalisee.
-            </p>
           </div>
           <div>
             <div className="card">
               <h3>Nous ecrire</h3>
-              <form action="mailto:mbom.didier@gmail.com" method="get">
+              <form action="mailto:blimpact2025@gmail.com" method="get">
                 <div className="field">
                   <label htmlFor="nom">Nom</label>
                   <input id="nom" type="text" name="nom" />
