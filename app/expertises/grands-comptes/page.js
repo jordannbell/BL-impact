@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Grands comptes",
-  description: "BL IMPACT accompagne les directions generales et directions metier des grands comptes.",
+  description: "BL IMPACT accompagne les directions generales et directions metier des grands comptes sur leurs flux documentaires.",
 };
 
 export default function Page() {
@@ -17,9 +17,12 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Au sein de grandes organisations, BL IMPACT intervient en appui des directions generales et des directions metier sur des projets strategiques transverses, en toute independance vis-a-vis des equipes internes et des prestataires en place.</p>
+            <p>Au sein de grandes organisations, BL IMPACT intervient en appui des directions generales et des directions metier sur des projets de transformation documentaire et de communication client transverses, en toute independance vis-a-vis des equipes internes et des prestataires en place.</p>
             <ul className="check-list">
-              <li>Diagnostic et repositionnement strategique</li>\n              <li>Accompagnement de projets de transformation transverses</li>\n              <li>Appui a la prise de decision en comite de direction</li>\n              <li>Pilotage de la performance a l&apos;echelle d&apos;une direction ou d&apos;un groupe</li>
+              <li>Diagnostic et refonte des flux documentaires a l&apos;echelle d&apos;une direction ou d&apos;un groupe</li>
+              <li>Accompagnement de projets de transformation multicanale transverses</li>
+              <li>Appui a la prise de decision en comite de direction</li>
+              <li>Pilotage de la performance et de la tracabilite des communications a grande echelle</li>
             </ul>
           </div>
           <div className="callout">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Accompagnement a la mise en oeuvre",
-  description: "BL IMPACT accompagne la mise en oeuvre operationnelle des plans strategiques.",
+  description: "BL IMPACT accompagne la mise en oeuvre operationnelle des projets de transformation documentaire, de l'AMOA au deploiement.",
 };
 
 export default function Page() {
@@ -17,18 +17,20 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Une strategie ne prend sa valeur que dans son execution. BL IMPACT accompagne la traduction du plan strategique en actions concretes et suit son deploiement aupres des equipes.</p>
+            <p>Une strategie de transformation documentaire ne prend sa valeur que dans son execution. BL IMPACT accompagne le cadrage, le pilotage et le deploiement des projets, jusqu&apos;a leur mise en production.</p>
             <ul className="check-list">
-              <li>Declinaison de la strategie en plans d&apos;action operationnels</li>\n              <li>Definition des priorites et du sequencement des chantiers</li>\n              <li>Accompagnement du changement aupres des equipes</li>\n              <li>Suivi de l&apos;avancement et ajustements en cours de deploiement</li>
+              <li>Assistance a maitrise d&apos;ouvrage : expression des besoins et animation d&apos;ateliers</li>
+              <li>Redaction des specifications et des cahiers des charges</li>
+              <li>Direction de projet et pilotage (PMO) jusqu&apos;a la recette</li>
+              <li>Plans de deploiement et accompagnement du changement aupres des equipes</li>
             </ul>
-            <p>BL IMPACT reste engage au-dela de la phase de recommandation, jusqu&apos;a la mise en oeuvre effective des decisions.</p>
+            <p>BL IMPACT reste engage au-dela de la phase de recommandation, jusqu&apos;a la mise en service effective des nouveaux processus.</p>
           </div>
           <div className="callout">
             <strong>Valeur ajoutee BL IMPACT</strong>
             <br /><br />
-            Un accompagnement direct par le fondateur du cabinet, une lecture
-            independante de votre contexte et des recommandations pensees pour etre
-            reellement mises en oeuvre.
+            Un accompagnement direct par le fondateur du cabinet jusqu&apos;au
+            deploiement effectif, au plus pres des equipes operationnelles.
           </div>
         </div>
       </section>

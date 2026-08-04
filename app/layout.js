@@ -4,11 +4,11 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: {
-    default: "BL IMPACT | Conseil en strategie",
+    default: "BL IMPACT | Conseil en transformation documentaire",
     template: "%s | BL IMPACT",
   },
   description:
-    "BL IMPACT, cabinet de conseil en strategie base a Paris, accompagne dirigeants et organisations du diagnostic a la mise en oeuvre.",
+    "BL IMPACT, cabinet de conseil en transformation documentaire et communication client base a Paris, accompagne dirigeants et organisations du diagnostic a la mise en oeuvre.",
 };
 
 export default function RootLayout({ children }) {

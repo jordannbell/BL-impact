@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Pilotage de la performance",
-  description: "BL IMPACT met en place les outils de pilotage et de suivi de la performance strategique.",
+  description: "BL IMPACT met en place les outils de pilotage, de suivi des couts et de tracabilite des communications multicanales.",
 };
 
 export default function Page() {
@@ -17,18 +17,20 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Pour perenniser les resultats, BL IMPACT aide a definir les indicateurs pertinents et les outils de pilotage permettant de suivre l&apos;atteinte des objectifs strategiques dans la duree.</p>
+            <p>Pour perenniser les resultats, BL IMPACT aide a definir les indicateurs et les outils de suivi permettant de mesurer la performance et la tracabilite de vos communications dans la duree.</p>
             <ul className="check-list">
-              <li>Definition d&apos;indicateurs de performance adaptes aux objectifs</li>\n              <li>Mise en place de tableaux de bord de suivi</li>\n              <li>Revues de performance periodiques avec la direction</li>\n              <li>Recommandations correctives en cas d&apos;ecart aux objectifs</li>
+              <li>Definition d&apos;indicateurs de suivi des couts, des delais et des volumes de flux</li>
+              <li>Mise en place de tableaux de bord et d&apos;outils de tracabilite des communications multicanales</li>
+              <li>Revues de performance periodiques avec la direction</li>
+              <li>Recommandations correctives en cas d&apos;ecart aux objectifs</li>
             </ul>
-            <p>Le pilotage de la performance permet de transformer une decision strategique ponctuelle en trajectoire durable.</p>
+            <p>Le pilotage de la performance permet de transformer une refonte ponctuelle en amelioration continue des flux.</p>
           </div>
           <div className="callout">
             <strong>Valeur ajoutee BL IMPACT</strong>
             <br /><br />
-            Un accompagnement direct par le fondateur du cabinet, une lecture
-            independante de votre contexte et des recommandations pensees pour etre
-            reellement mises en oeuvre.
+            Des indicateurs simples, penses pour etre suivis dans la duree par
+            vos equipes, et non uniquement lors d&apos;un audit ponctuel.
           </div>
         </div>
       </section>

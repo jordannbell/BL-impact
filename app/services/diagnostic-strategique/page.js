@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Diagnostic strategique",
-  description: "Le diagnostic strategique BL IMPACT : audit de marche, d'organisation et des enjeux internes.",
+  description: "Le diagnostic strategique BL IMPACT : audit des flux documentaires, des outils et des canaux de communication.",
 };
 
 export default function Page() {
@@ -17,18 +17,21 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Avant toute recommandation, BL IMPACT construit une comprehension fine du contexte de votre organisation : marche, positionnement concurrentiel, modele economique et fonctionnement interne.</p>
+            <p>Avant toute recommandation, BL IMPACT construit une comprehension fine de vos processus documentaires et de votre communication client : flux entrants et sortants, outils en place, organisation de la production et parcours associe.</p>
             <ul className="check-list">
-              <li>Analyse du marche et de la dynamique concurrentielle</li>\n              <li>Audit de l&apos;organisation et des processus de decision</li>\n              <li>Identification des enjeux et des risques strategiques</li>\n              <li>Entretiens avec les parties prenantes cles</li>\n              <li>Synthese et restitution argumentee a la direction</li>
+              <li>Cartographie des flux entrants (courrier, email, formulaires, signatures) et sortants (edition, envoi, archivage)</li>
+              <li>Audit des outils de production documentaire et des canaux de diffusion existants</li>
+              <li>Identification des couts, des delais et des points de rupture dans le parcours client</li>
+              <li>Entretiens avec les equipes operationnelles et les parties prenantes cles</li>
+              <li>Synthese et restitution argumentee a la direction</li>
             </ul>
-            <p>Ce diagnostic constitue le socle sur lequel s&apos;appuie l&apos;ensemble de la demarche strategique proposee par la suite.</p>
+            <p>Ce diagnostic constitue le socle sur lequel s&apos;appuie l&apos;ensemble de la demarche de transformation proposee par la suite.</p>
           </div>
           <div className="callout">
             <strong>Valeur ajoutee BL IMPACT</strong>
             <br /><br />
-            Un accompagnement direct par le fondateur du cabinet, une lecture
-            independante de votre contexte et des recommandations pensees pour etre
-            reellement mises en oeuvre.
+            Un regard exterieur et independant sur vos flux actuels, sans parti
+            pris pour un editeur de solutions ou un prestataire en particulier.
           </div>
         </div>
       </section>

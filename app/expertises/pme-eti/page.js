@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "PME et ETI",
-  description: "BL IMPACT accompagne les dirigeants de PME et d'ETI dans leur strategie de croissance.",
+  description: "BL IMPACT accompagne les dirigeants de PME et d'ETI dans la structuration de leurs flux documentaires et de leur communication.",
 };
 
 export default function Page() {
@@ -17,9 +17,12 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Pour les dirigeants de PME et d&apos;ETI, BL IMPACT propose un accompagnement strategique dimensionne aux moyens de l&apos;entreprise, centre sur les leviers de croissance, de structuration et de competitivite.</p>
+            <p>Pour les dirigeants de PME et d&apos;ETI, BL IMPACT propose un accompagnement dimensionne aux moyens de l&apos;entreprise, centre sur la simplification des flux documentaires et la fiabilisation de la communication client.</p>
             <ul className="check-list">
-              <li>Definition d&apos;une strategie de croissance et de developpement</li>\n              <li>Structuration de l&apos;organisation pour accompagner la croissance</li>\n              <li>Appui a la decision dans un contexte de ressources limitees</li>\n              <li>Mise en place d&apos;indicateurs de pilotage simples et actionnables</li>
+              <li>Diagnostic des processus documentaires existants et des couts associes</li>
+              <li>Structuration des outils et des flux pour accompagner la croissance</li>
+              <li>Appui a la decision dans un contexte de ressources limitees</li>
+              <li>Mise en place d&apos;indicateurs de suivi simples et actionnables</li>
             </ul>
           </div>
           <div className="callout">

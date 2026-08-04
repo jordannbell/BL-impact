@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Elaboration de la strategie",
-  description: "L'elaboration de la strategie avec BL IMPACT : scenarios, arbitrages et plan strategique.",
+  description: "L'elaboration de la strategie avec BL IMPACT : etude d'opportunite, scenarios de transformation documentaire et feuille de route.",
 };
 
 export default function Page() {
@@ -17,18 +17,20 @@ export default function Page() {
       <section>
         <div className="container two-col">
           <div>
-            <p>Sur la base du diagnostic, BL IMPACT construit avec la direction plusieurs scenarios strategiques, en evalue les impacts et accompagne l&apos;arbitrage final.</p>
+            <p>Sur la base du diagnostic, BL IMPACT etudie avec la direction les scenarios de transformation possibles (dematerialisation, refonte des outils, industrialisation de la production) et en evalue les impacts avant l&apos;arbitrage final.</p>
             <ul className="check-list">
-              <li>Construction de scenarios strategiques differencies</li>\n              <li>Evaluation des impacts economiques et organisationnels de chaque scenario</li>\n              <li>Aide a la decision et a l&apos;arbitrage en comite de direction</li>\n              <li>Formalisation du plan strategique et de sa feuille de route</li>
+              <li>Etude d&apos;opportunite et de faisabilite des scenarios de transformation</li>
+              <li>Choix de la cible fonctionnelle et technique (gestion electronique des documents, communication multicanale, edition)</li>
+              <li>Evaluation des impacts economiques et organisationnels de chaque scenario</li>
+              <li>Formalisation de la feuille de route et du plan de transformation</li>
             </ul>
-            <p>L&apos;objectif : aboutir a une strategie claire, partagee et reellement actionnable par les equipes.</p>
+            <p>L&apos;objectif : aboutir a une strategie de transformation claire, chiffree et reellement actionnable par les equipes.</p>
           </div>
           <div className="callout">
             <strong>Valeur ajoutee BL IMPACT</strong>
             <br /><br />
-            Un accompagnement direct par le fondateur du cabinet, une lecture
-            independante de votre contexte et des recommandations pensees pour etre
-            reellement mises en oeuvre.
+            Des scenarios batis avec vos equipes et evalues sur leur impact reel
+            en termes de couts, de delais et de simplicite d&apos;usage.
           </div>
         </div>
       </section>

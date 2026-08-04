@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Expertises",
-  description: "Les types d'organisations accompagnes par BL IMPACT : grands comptes, PME et ETI, secteur public et associations.",
+  description: "Les types d'organisations accompagnes par BL IMPACT sur leurs flux documentaires : grands comptes, PME et ETI, secteur public et associations.",
 };
 
 export default function Expertises() {
@@ -18,21 +18,22 @@ export default function Expertises() {
       <section>
         <div className="container">
           <p className="section-sub">
-            BL IMPACT adapte sa methodologie de conseil en strategie au contexte
-            propre de chaque type d&apos;organisation, avec une meme exigence de resultat.
+            BL IMPACT adapte sa methodologie de conseil en transformation
+            documentaire au contexte propre de chaque type d&apos;organisation,
+            avec une meme exigence de resultat.
           </p>
           <div className="grid">
             <div className="card">
               <h3><Link href="/expertises/grands-comptes">Grands comptes</Link></h3>
-              <p>Accompagnement strategique de directions generales et de directions metier au sein de grandes organisations.</p>
+              <p>Accompagnement des directions generales et directions metier de grandes organisations dans la refonte de leurs flux documentaires et de leur communication client.</p>
             </div>
             <div className="card">
               <h3><Link href="/expertises/pme-eti">PME et ETI</Link></h3>
-              <p>Conseil en strategie de croissance et de structuration pour les dirigeants de PME et d&apos;ETI.</p>
+              <p>Conseil en structuration des processus documentaires et de communication pour les dirigeants de PME et d&apos;ETI en croissance.</p>
             </div>
             <div className="card">
               <h3><Link href="/expertises/secteur-public">Secteur public et associations</Link></h3>
-              <p>Accompagnement strategique d&apos;organisations publiques et associatives dans un contexte de ressources contraintes.</p>
+              <p>Accompagnement d&apos;organisations publiques et associatives dans l&apos;optimisation de leurs flux documentaires, dans un contexte de ressources contraintes.</p>
             </div>
           </div>
         </div>

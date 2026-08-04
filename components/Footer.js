@@ -7,9 +7,9 @@ export default function Footer() {
         <div>
           <h4>BL IMPACT</h4>
           <p style={{ maxWidth: 330 }}>
-            Cabinet de conseil en strategie base a Paris. BL IMPACT accompagne
-            dirigeants et organisations dans la definition et la mise en oeuvre
-            de leur strategie.
+            Cabinet de conseil en transformation documentaire base a Paris. BL
+            IMPACT accompagne dirigeants et organisations dans l&apos;optimisation
+            et le pilotage de leurs flux d&apos;information.
           </p>
         </div>
         <div>
