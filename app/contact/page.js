@@ -26,7 +26,7 @@ export default function Contact() {
             <ul className="check-list">
               <li>Paris, France</li>
               <li>Email : <a href="mailto:mbom.didier@gmail.com" style={{ color: "var(--accent)" }}>mbom.didier@gmail.com</a></li>
-              <li>Telephone : 00 77 44 22 11</li>
+              <li>Telephone : +33 6 51 45 35 38</li>
             </ul>
             <p style={{ color: "var(--slate)", fontSize: 13.5, marginTop: 24 }}>
               BL IMPACT est un cabinet recemment cree. Les informations legales

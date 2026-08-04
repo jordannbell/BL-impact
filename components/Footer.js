@@ -26,7 +26,7 @@ export default function Footer() {
           <ul>
             <li>Paris, France</li>
             <li><a href="mailto:mbom.didier@gmail.com">mbom.didier@gmail.com</a></li>
-            <li>00 77 44 22 11</li>
+            <li>+33 6 51 45 35 38</li>
             <li><Link href="/contact">Nous contacter</Link></li>
           </ul>
         </div>
