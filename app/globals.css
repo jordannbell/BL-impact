@@ -82,33 +82,44 @@ a { color: inherit; text-decoration: none; }
 
 .nav-link-row { display: flex; align-items: center; }
 .submenu-toggle { display: none; }
+.nav-backdrop { display: none; }
 
 .main-nav > ul { list-style: none; display: flex; gap: 2px; margin: 0; padding: 0; flex-wrap: wrap; }
 .main-nav > ul > li { position: relative; }
 .main-nav > ul > li > .nav-link-row > a {
   display: block; padding: 9px 13px; font-size: 14px; font-weight: 600;
   color: var(--ink); border-radius: 10px; transition: all .15s ease;
+  position: relative;
 }
 .main-nav > ul > li > .nav-link-row > a:hover, .main-nav > ul > li.active > .nav-link-row > a { background: var(--bg); color: var(--accent); }
+.main-nav > ul > li.active > .nav-link-row > a { font-weight: 700; }
+.main-nav > ul > li.active > .nav-link-row > a::after {
+  content: ""; position: absolute; left: 13px; bottom: 3px;
+  width: 16px; height: 2px; border-radius: 2px; background: var(--accent);
+}
 
 /* Submenu: the box touches the trigger link directly (top: 100%, no gap),
    so the pointer never crosses a dead zone while moving from the link down
    into the submenu. The visual breathing room comes from padding-top
    instead of a real gap, keeping the whole area continuously hoverable. */
 .main-nav .submenu {
-  display: none; position: absolute; top: 100%; left: 0;
+  position: absolute; top: 100%; left: 0;
   background: var(--white); border: 1px solid var(--border);
   box-shadow: 0 16px 40px rgba(10,27,51,0.12);
   min-width: 270px; padding: 14px 8px 8px; margin: 0;
   border-radius: 14px; list-style: none;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
 }
 .main-nav > ul > li:hover > .submenu,
 .main-nav > ul > li:focus-within > .submenu,
 .main-nav > ul > li.open > .submenu {
-  display: block;
+  opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0);
 }
-.main-nav .submenu li a { display: block; padding: 9px 14px; font-size: 13.5px; font-weight: 500; color: var(--slate); border-radius: 8px; }
+.main-nav .submenu li a { display: block; padding: 9px 14px; font-size: 13.5px; font-weight: 500; color: var(--slate); border-radius: 8px; transition: background .15s ease, color .15s ease; }
 .main-nav .submenu li a:hover { background: var(--bg); color: var(--accent); }
+.main-nav .submenu li.active > a { background: var(--bg); color: var(--accent); font-weight: 700; }
 
 /* Hero */
 .hero {
@@ -193,16 +204,17 @@ ul.check-list li::before {
   background: rgba(46,111,158,0.15); color: var(--accent); font-weight: 700; font-size: 12px;
 }
 
-ul.question-list { list-style: none; padding: 0; margin: 0 0 22px; }
+ul.question-list { list-style: none; padding: 0; margin: 0 0 22px; counter-reset: question; }
 ul.question-list li {
-  padding: 10px 0 10px 32px; position: relative; color: var(--slate);
+  padding: 11px 0 11px 34px; position: relative; color: var(--slate);
   font-size: 15px; border-bottom: 1px solid var(--border);
+  counter-increment: question;
 }
 ul.question-list li:last-child { border-bottom: none; }
 ul.question-list li::before {
-  content: "?"; position: absolute; left: 0; top: 9px;
-  width: 20px; height: 20px; border-radius: 6px; text-align: center; line-height: 20px;
-  background: rgba(46,111,158,0.15); color: var(--accent); font-weight: 700; font-size: 12px;
+  content: counter(question) "-"; position: absolute; left: 0; top: 11px;
+  min-width: 24px; color: var(--accent); font-weight: 800; font-size: 14.5px;
+  letter-spacing: -0.02em;
 }
 
 /* Accordion (Notre approche : piliers methodologiques) */
@@ -285,10 +297,19 @@ ul.question-list li::before {
     position: fixed; top: 0; right: 0; height: 100vh; width: min(320px, 86vw);
     background: var(--white); border-left: 1px solid var(--border);
     box-shadow: -16px 0 40px rgba(10,27,51,0.14);
-    padding: 76px 20px 24px; overflow-y: auto;
-    transform: translateX(100%); transition: transform .25s ease;
+    padding: 76px 20px 24px; overflow-y: auto; z-index: 59;
+    transform: translateX(100%);
+    transition: transform .32s cubic-bezier(.32,.72,0,1);
   }
   .main-nav.is-open { transform: translateX(0); }
+
+  .nav-backdrop {
+    display: block; position: fixed; inset: 0; z-index: 40;
+    background: rgba(10,27,51,0.45);
+    opacity: 0; pointer-events: none;
+    transition: opacity .28s ease;
+  }
+  .nav-backdrop.is-open { opacity: 1; pointer-events: auto; }
 
   .main-nav > ul { flex-direction: column; gap: 2px; }
   .main-nav > ul > li { width: 100%; }
@@ -309,9 +330,11 @@ ul.question-list li::before {
 
   /* On mobile the submenu is an inline accordion panel, not a hover flyout. */
   .main-nav .submenu {
-    display: block; position: static; box-shadow: none; border: none;
+    position: static; box-shadow: none; border: none;
     background: transparent; padding: 0 0 0 12px; margin: 0;
     max-height: 0; overflow: hidden;
+    opacity: 1; visibility: visible; pointer-events: auto; transform: none;
+    transition: max-height .3s cubic-bezier(.4,0,.2,1), padding .3s ease;
   }
   .main-nav > ul > li.open > .submenu { max-height: 600px; padding: 4px 0 8px 12px; }
   .main-nav .submenu li a { color: var(--ink); }

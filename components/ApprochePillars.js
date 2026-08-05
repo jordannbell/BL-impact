@@ -14,7 +14,7 @@ const pillars = [
   {
     title: "Le Déploiement Technique & Intégration",
     items: [
-      { label: "Architecture sur-mesure", text: "Interconnexion transparente de notre solution GED/Éditique avec votre écosystème existant (ERP, CRM, SIRH) via API." },
+      { label: "Architecture sur-mesure", text: "Interconnexion transparente de la solution GED/Éditique choisie avec votre écosystème existant (ERP, CRM, SIRH) via API." },
       { label: "Méthodologie agile", text: "Déploiement par lots fonctionnels pour garantir des gains rapides (quick wins) et valider chaque étape avec vous." },
       { label: "Reprise des historiques", text: "Migration sécurisée, nettoyage et indexation de votre passif documentaire vers la nouvelle plateforme." },
     ],

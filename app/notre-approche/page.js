@@ -14,17 +14,6 @@ export default function Approche() {
           <div className="breadcrumb"><Link href="/">Accueil</Link> / Notre approche</div>
           <h1>Notre approche</h1>
           <p>
-            BL IMPACT est une structure nouvellement créée : cette page présente
-            notre méthode et les types de missions de transformation documentaire
-            que nous menons, plutôt qu&apos;un historique de références.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <h2 className="section-title">Notre expertise</h2>
-          <p className="section-sub">
             BL IMPACT est une structure nouvellement créée qui organise sa
             stratégie d&apos;expansion autour de la convergence Éditique &amp; GED.
             Aujourd&apos;hui, ces deux univers fusionnent souvent dans des offres

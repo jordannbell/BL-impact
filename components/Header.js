@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const nav = [
@@ -30,8 +31,14 @@ const nav = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+
+  function isActive(item) {
+    if (item.href === "/") return pathname === "/";
+    return pathname === item.href || pathname.startsWith(`${item.href}/`);
+  }
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -76,39 +83,50 @@ export default function Header() {
           <span />
         </button>
 
+        <div className={`nav-backdrop${menuOpen ? " is-open" : ""}`} onClick={closeAll} aria-hidden="true" />
+
         <nav className={`main-nav${menuOpen ? " is-open" : ""}`}>
           <ul>
-            {nav.map((item) => (
-              <li key={item.href} className={openSubmenu === item.href ? "open" : ""}>
-                <div className="nav-link-row">
-                  <Link href={item.href} onClick={closeAll}>
-                    {item.label}
-                  </Link>
+            {nav.map((item) => {
+              const active = isActive(item);
+              const liClass = [openSubmenu === item.href ? "open" : "", active ? "active" : ""]
+                .filter(Boolean)
+                .join(" ");
+              return (
+                <li key={item.href} className={liClass}>
+                  <div className="nav-link-row">
+                    <Link href={item.href} onClick={closeAll} aria-current={active ? "page" : undefined}>
+                      {item.label}
+                    </Link>
+                    {item.sub && (
+                      <button
+                        type="button"
+                        className="submenu-toggle"
+                        aria-label={`Afficher le sous-menu ${item.label}`}
+                        aria-expanded={openSubmenu === item.href}
+                        onClick={() => toggleSubmenu(item.href)}
+                      >
+                        <span />
+                      </button>
+                    )}
+                  </div>
                   {item.sub && (
-                    <button
-                      type="button"
-                      className="submenu-toggle"
-                      aria-label={`Afficher le sous-menu ${item.label}`}
-                      aria-expanded={openSubmenu === item.href}
-                      onClick={() => toggleSubmenu(item.href)}
-                    >
-                      <span />
-                    </button>
+                    <ul className="submenu">
+                      {item.sub.map((s) => {
+                        const subActive = pathname === s.href;
+                        return (
+                          <li key={s.href} className={subActive ? "active" : ""}>
+                            <Link href={s.href} onClick={closeAll} aria-current={subActive ? "page" : undefined}>
+                              {s.label}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   )}
-                </div>
-                {item.sub && (
-                  <ul className="submenu">
-                    {item.sub.map((s) => (
-                      <li key={s.href}>
-                        <Link href={s.href} onClick={closeAll}>
-                          {s.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
