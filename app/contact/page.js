@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="container">
           <div className="breadcrumb"><Link href="/">Accueil</Link> / Contact</div>
           <h1>Contact</h1>
-          <p>Une question, un projet ? Échangeons.</p>
+          <p>Une question, un projet et nous échangeons.</p>
         </div>
       </section>
       <section>

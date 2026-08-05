@@ -53,13 +53,15 @@ export default function Services() {
         <div className="container">
           <h2 className="section-title">Vous cherchez une solution pour votre entreprise ?</h2>
           <p className="section-sub">
-            BL IMPACT vous accompagne. Bon à savoir : vous pouvez dès à présent
-            nous préciser les éléments suivants pour accélérer notre premier échange.
+            Si vous cherchez une solution pour votre entreprise, BL IMPACT vous
+            accompagne. Bon à savoir, vous pourriez nous préciser :
           </p>
-          <ul className="check-list">
+          <ul className="question-list">
             <li>Quel est votre volume mensuel et/ou annuel de documents à traiter ?</li>
-            <li>Quel est l&apos;objectif principal : réduire les coûts d&apos;impression, automatiser des validations internes, vous conformer à la facturation électronique ?</li>
+            <li>Quel est l&apos;objectif principal ? (réduire les coûts d&apos;impression, automatiser des validations internes, se conformer à la facture électronique ?)</li>
             <li>Quels logiciels métiers (ERP, CRM) la solution devra-t-elle intégrer ?</li>
+            <li>Quel est le secteur d&apos;activité (banque, secteur public, industrie...) ?</li>
+            <li>Le projet est-il prévu pour un déploiement sur le Cloud (SaaS) ou on-premise ?</li>
           </ul>
           <Link className="btn" href="/contact">Nous transmettre ces informations</Link>
         </div>

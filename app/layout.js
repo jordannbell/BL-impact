@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import VersionBanner from "../components/VersionBanner";
 
 export const metadata = {
   title: {
@@ -15,9 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body>
-        <div className="version-banner">
-          <strong>Version 1</strong> : ce site est une première version, il sera enrichi et amélioré au fur et à mesure.
-        </div>
+        <VersionBanner />
         <Header />
         <main>{children}</main>
         <Footer />

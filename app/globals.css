@@ -11,7 +11,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scrollbar-gutter: stable; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
 body {
   margin: 0;
@@ -20,6 +23,8 @@ body {
   background: var(--white);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; margin-top: 0; font-weight: 800; letter-spacing: -0.02em; }
@@ -29,13 +34,21 @@ a { color: inherit; text-decoration: none; }
 
 /* Version banner */
 .version-banner {
+  position: relative;
   background: var(--navy);
   color: #C8D4E6;
   text-align: center;
   font-size: 13px;
-  padding: 9px 16px;
+  padding: 9px 44px 9px 16px;
 }
 .version-banner strong { color: var(--accent-2); font-weight: 600; }
+.version-banner-close {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 26px; height: 26px; display: flex; align-items: center; justify-content: center;
+  background: none; border: none; color: #C8D4E6; cursor: pointer;
+  font-size: 18px; line-height: 1; border-radius: 6px;
+}
+.version-banner-close:hover { background: rgba(255,255,255,0.12); color: var(--white); }
 
 /* Header */
 .site-header {
@@ -43,6 +56,8 @@ a { color: inherit; text-decoration: none; }
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  transform: translateZ(0);
+  will-change: transform;
 }
 .header-inner {
   max-width: 1140px; margin: 0 auto; padding: 14px 24px;
@@ -176,6 +191,49 @@ ul.check-list li::before {
   content: "✓"; position: absolute; left: 0; top: 9px;
   width: 20px; height: 20px; border-radius: 6px; text-align: center; line-height: 20px;
   background: rgba(46,111,158,0.15); color: var(--accent); font-weight: 700; font-size: 12px;
+}
+
+ul.question-list { list-style: none; padding: 0; margin: 0 0 22px; }
+ul.question-list li {
+  padding: 10px 0 10px 32px; position: relative; color: var(--slate);
+  font-size: 15px; border-bottom: 1px solid var(--border);
+}
+ul.question-list li:last-child { border-bottom: none; }
+ul.question-list li::before {
+  content: "?"; position: absolute; left: 0; top: 9px;
+  width: 20px; height: 20px; border-radius: 6px; text-align: center; line-height: 20px;
+  background: rgba(46,111,158,0.15); color: var(--accent); font-weight: 700; font-size: 12px;
+}
+
+/* Accordion (Notre approche : piliers methodologiques) */
+.accordion {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.accordion-item { border-bottom: 1px solid var(--border); }
+.accordion-item:last-child { border-bottom: none; }
+.accordion-trigger {
+  width: 100%; display: flex; align-items: center; gap: 16px;
+  padding: 20px 24px; background: none; border: none; cursor: pointer;
+  text-align: left; font-family: inherit;
+}
+.accordion-trigger .num { margin-bottom: 0; flex-shrink: 0; }
+.accordion-title { flex: 1; font-weight: 800; color: var(--navy); font-size: 16.5px; letter-spacing: -0.01em; }
+.accordion-chevron {
+  width: 10px; height: 10px; flex-shrink: 0; margin-right: 4px;
+  border-right: 2px solid var(--slate); border-bottom: 2px solid var(--slate);
+  transform: rotate(45deg); transition: transform .2s ease;
+}
+.accordion-item.open .accordion-chevron { transform: rotate(-135deg); }
+.accordion-body { list-style: none; padding: 4px 24px 22px 80px; margin: 0; }
+.accordion-body li {
+  padding: 10px 0; color: var(--slate); font-size: 15px;
+  border-bottom: 1px solid var(--border);
+}
+.accordion-body li:last-child { border-bottom: none; }
+@media (max-width: 640px) {
+  .accordion-trigger { padding: 16px; gap: 12px; }
+  .accordion-body { padding: 4px 16px 18px 16px; }
 }
 
 .callout {

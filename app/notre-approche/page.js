@@ -1,8 +1,9 @@
 import Link from "next/link";
+import ApprochePillars from "../../components/ApprochePillars";
 
 export const metadata = {
   title: "Notre approche",
-  description: "La méthode BL IMPACT en quatre temps pour la transformation documentaire : comprendre, décider, agir, mesurer.",
+  description: "La méthode BL IMPACT en quatre piliers pour vos projets Éditique & GED : cadrage, déploiement, conduite du changement, exploitation.",
 };
 
 export default function Approche() {
@@ -22,7 +23,7 @@ export default function Approche() {
 
       <section>
         <div className="container">
-          <h2 className="section-title">Notre positionnement</h2>
+          <h2 className="section-title">Notre expertise</h2>
           <p className="section-sub">
             BL IMPACT est une structure nouvellement créée qui organise sa
             stratégie d&apos;expansion autour de la convergence Éditique &amp; GED.
@@ -37,14 +38,12 @@ export default function Approche() {
 
       <section className="alt">
         <div className="container">
-          <h2 className="section-title">Une méthode en quatre temps</h2>
-          <p className="section-sub">Quelle que soit la mission, BL IMPACT suit une même logique : comprendre, décider, agir, mesurer.</p>
-          <div className="grid">
-            <div className="card"><div className="num">1</div><h3>Comprendre</h3><p>Un diagnostic rigoureux de vos flux et de vos outils, sans idée préconçue ni solution imposée d&apos;avance.</p></div>
-            <div className="card"><div className="num">2</div><h3>Décider</h3><p>Des scénarios de transformation clairs et un accompagnement à l&apos;arbitrage, avec la direction, en toute transparence.</p></div>
-            <div className="card"><div className="num">3</div><h3>Agir</h3><p>Un appui concret au cadrage et au déploiement, au plus près des équipes opérationnelles.</p></div>
-            <div className="card"><div className="num">4</div><h3>Mesurer</h3><p>Des indicateurs simples pour suivre les coûts, les délais et la traçabilité, et ajuster la trajectoire si nécessaire.</p></div>
-          </div>
+          <h2 className="section-title">Notre positionnement</h2>
+          <p className="section-sub">
+            Une méthodologie structurée en quatre piliers, pour vous rassurer
+            sur notre rigueur, notre agilité et la sécurité de vos données.
+          </p>
+          <ApprochePillars />
         </div>
       </section>
 
