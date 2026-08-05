@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Contact",
-  description: "Contactez BL IMPACT, cabinet de conseil en stratégie basé à Paris.",
+  description: "Contactez BL IMPACT, cabinet de conseil en stratégie basé en Île-de-France.",
 };
 
 export default function Contact() {
@@ -24,7 +24,7 @@ export default function Contact() {
               <p>Fondateur et Directeur, BL IMPACT</p>
             </div>
             <ul className="check-list">
-              <li>Paris, France</li>
+              <li>Île-de-France, France</li>
               <li>Email : <a href="mailto:blimpact2025@gmail.com" style={{ color: "var(--accent)" }}>blimpact2025@gmail.com</a></li>
               <li>Téléphone : +33 6 51 45 35 38</li>
               <li>SIRET : 988 289 591 00014</li>

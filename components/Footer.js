@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <h4>BL IMPACT</h4>
           <p style={{ maxWidth: 330 }}>
-            Cabinet de conseil en transformation documentaire basé à Paris. BL
+            Cabinet de conseil en transformation documentaire basé en Île-de-France. BL
             IMPACT accompagne dirigeants et organisations dans l&apos;optimisation
             et le pilotage de leurs flux d&apos;information.
           </p>
@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <h4>Contact</h4>
           <ul>
-            <li>Paris, France</li>
+            <li>Île-de-France, France</li>
             <li><a href="mailto:blimpact2025@gmail.com">blimpact2025@gmail.com</a></li>
             <li>+33 6 51 45 35 38</li>
             <li><Link href="/contact">Nous contacter</Link></li>

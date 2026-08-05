@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="container">
-          <div className="badge">Cabinet de conseil en transformation documentaire · Paris</div>
+          <div className="badge">Cabinet de conseil en transformation documentaire · Île-de-France</div>
           <h1>
             Reprenez la main sur vos <span className="grad">flux documentaires et votre communication client</span>.
           </h1>

@@ -21,8 +21,8 @@ export default function APropos() {
           <div>
             <h2 className="section-title">Notre histoire</h2>
             <p>
-              BL IMPACT est un cabinet de conseil fondé à Paris par Didier Mbom,
-              spécialisé dans la transformation des processus documentaires et de
+              BL IMPACT est un cabinet de conseil, spécialisé dans la
+              transformation des processus documentaires et de
               la communication client. Né de la conviction que les organisations,
               quelle que soit leur taille, ont besoin d&apos;un accompagnement
               exigeant mais accessible pour fiabiliser leurs flux d&apos;information,
@@ -56,7 +56,7 @@ export default function APropos() {
               <h3>En bref</h3>
               <ul className="check-list" style={{ margin: 0 }}>
                 <li>Cabinet indépendant</li>
-                <li>Basé à Paris</li>
+                <li>Basé en Île-de-France</li>
                 <li>Conseil en transformation documentaire</li>
                 <li>Accompagnement personnalisé</li>
               </ul>

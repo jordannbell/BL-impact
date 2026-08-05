@@ -9,7 +9,7 @@ export const metadata = {
     template: "%s | BL IMPACT",
   },
   description:
-    "BL IMPACT, cabinet de conseil en transformation documentaire et communication client basé à Paris, accompagne dirigeants et organisations du diagnostic à la mise en œuvre.",
+    "BL IMPACT, cabinet de conseil en transformation documentaire et communication client basé en Île-de-France, accompagne dirigeants et organisations du diagnostic à la mise en œuvre.",
 };
 
 export default function RootLayout({ children }) {
